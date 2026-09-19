@@ -27,7 +27,8 @@ class SalesReport {
         $whereSql = implode(' AND ', $where);
         $join = "FROM order_items oi
                  JOIN orders o ON o.id = oi.order_id
-                 JOIN products p ON p.id = oi.product_id";
+                 JOIN products p ON p.id = oi.product_id
+                 JOIN artists a ON a.id = p.artist_id";
 
         // Summary
         $stmt = $this->db->prepare("
