@@ -4,6 +4,12 @@ VINYLWAVE is a PHP/MySQL storefront for vinyl records, CDs, releases and artist 
 
 This repository is a demo project. Payment processing is intentionally not included: completed checkout orders are marked as paid for demonstration purposes.
 
+<img width="1912" height="1080" alt="{72E45D36-489F-46FB-988C-62B801BE2551}" src="https://github.com/user-attachments/assets/8ebb3fb0-5e36-425e-84f6-d57b1200fb3b" />
+
+<img width="1906" height="1039" alt="{9AF86E06-6780-403A-A90F-C9FF017A2DBF}" src="https://github.com/user-attachments/assets/5bf4be88-ddbb-4b25-8f6d-b0d72709a4af" />
+
+<img width="1911" height="1041" alt="{DDC84373-26B7-411E-AA30-7871EDC384F2}" src="https://github.com/user-attachments/assets/acf22e5b-f15d-4035-8856-dad7ed6c0726" />
+
 ## Requirements
 
 - PHP 8.1 or newer
