@@ -1,0 +1,37 @@
+# Environment
+.env
+
+# Composer
+vendor/
+composer.lock
+
+# Uploads
+public/uploads/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+storage/logs/
+
+# Cache
+bootstrap/cache/
+var/cache/
+# Runtime logs
+storage/logs/*
+!storage/logs/.gitkeep
+
+# Local tool state
+/.freebuff/
+
+# Local database backups
+database/backups/*.sql
+!database/backups/.gitkeep

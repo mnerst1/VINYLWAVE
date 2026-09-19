@@ -1,0 +1,27 @@
+Act as a Senior Full-Stack Developer and UI/UX Designer. Help me build a modern e-commerce web application for purchasing vinyl records and official merch for contemporary US artists (e.g., Travis Scott, Frank Ocean, Tyler, The Creator, Billie Eilish, Drake).
+
+### Tech Stack & Environment:
+- Local Environment: OpenServer
+- Backend: PHP (Pure PHP with OOP/MVC architecture OR lightweight Routing) & MySQL
+- Frontend: HTML5, Tailwind CSS, JavaScript (Alpine.js or native JS for interactive components, GSAP for animations)
+
+### Design & Aesthetic Requirements:
+- Theme: Dark Mode / Streetwear / Cyber aesthetic (Deep dark backgrounds like #0D0D0D, high-contrast typography, neon/pastel accent colors).
+- Visual Vibe: Inspired by Spotify, Grailed, and Cactus Jack branding.
+- Dynamic Vinyl Card Animation: When hovering over a product card, the vinyl disc should smoothly slide out from the sleeve using CSS/GSAP.
+
+### Key Features to Implement:
+1. Catalog & Filtering: Filter products by category (Vinyl, Merch, CDs), Artist, Genre, and Vinyl Color Variants (e.g., Splatter, Clear, Marble).
+2. Product Page: Interactive tracklist with a 15-second JS audio preview player, merch size selector, stock indicator, and "Limited Drop" countdown timer.
+3. Interactive Audio Player: A sticky footer player that continues playing track samples while browsing the shop.
+4. Cart & Checkout System: PHP Session/LocalStorage based cart with a promo code system (e.g., "TRAVIS10") and a simulated order placement process.
+
+### Please provide the project blueprint in structured steps:
+1. Database Schema: Clean SQL script for MySQL (`artists`, `products`, `tracks`, `orders`, `order_items`). Include sample seed data for 3-4 artists and products.
+2. Architecture & File Structure: A minimal, standard PHP project directory layout suitable for OpenServer (`/config`, `/public`, `/views`, `/controllers`).
+3. Core PHP Logic: PDO database connection class and a lightweight Controller/Router setup.
+4. Frontend Components:
+   - Modern Tailwind CSS layout file.
+   - Interactive HTML/JS component for the Vinyl Card with sleeve animation and audio preview snippet.
+
+Start by presenting the project file structure and the complete MySQL database script.

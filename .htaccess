@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Application code, migrations and configuration must never be web-accessible.
+    RewriteRule ^(?:config|controllers|models|views|database|storage|tests|\.freebuff)(?:/|$) - [F,L,NC]
+
+    # Route public assets before checking for existing files in the project root.
+    RewriteRule ^assets/(.*)$ public/assets/$1 [L,QSA]
+    RewriteRule ^uploads/(.*)$ public/uploads/$1 [L,QSA]
+    RewriteRule ^manifest\.json$ public/manifest.json [L]
+    RewriteRule ^service-worker\.js$ public/service-worker.js [L]
+
+    # If the request is for public or existing files/directories, serve them directly
+    RewriteCond %{REQUEST_URI} ^/public/ [NC,OR]
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+
+    # Rewrite all other requests to index.php
+    RewriteRule ^ index.php [L,QSA]
+</IfModule>
+
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>
+
+# Ensure index.php is loaded by default
+DirectoryIndex index.php public/index.php

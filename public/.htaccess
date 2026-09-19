@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Serve existing files directly (manifest.json, service-worker.js, assets, uploads)
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    RewriteRule ^ index.php [L,QSA]
+</IfModule>
+
+DirectoryIndex index.php
+
+<IfModule mod_headers.c>
+    # Correct scope for the service worker
+    <Files "service-worker.js">
+        Header set Service-Worker-Allowed "/"
+    </Files>
+</IfModule>
+
+AddType application/manifest+json .json
