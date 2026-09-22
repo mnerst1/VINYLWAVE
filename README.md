@@ -19,7 +19,7 @@ This repository is a demo project. Payment processing is intentionally not inclu
 - Optional: `ffmpeg` for generating video poster images
 - Optional for email features: a configured PHP `mail()` transport or SMTP adapter
 
-## Quick start on OpenServer
+## Quick start on OpenServer 
 
 1. Put the repository in `C:\OSPanel\domains\vinylwave-project` (or another OpenServer domain directory).
 2. Start Apache and MySQL.
@@ -96,8 +96,6 @@ For production, use `APP_ENV=production`, `APP_DEBUG=false`, HTTPS, a non-root d
 - User roles, bans and impersonation
 - Sales reports and CSV export
 - Product CSV import/export
-- Chart.js dashboard summaries
-- Image optimization and optional MP4 poster generation
 
 ## Project structure
 
